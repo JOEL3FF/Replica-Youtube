@@ -1,0 +1,30 @@
+.Bloque-uno {
+  display: flex;
+  align: {
+    items: center;
+  }
+  justify: {
+    content: space-around;
+  }
+  grid-area: dos;
+  &__img {
+    width: 2em;
+    height: 2em;
+    &--perfil {
+      border-radius: 50%;
+    }
+  }
+  &__text {
+    font: {
+      size: 1em;
+    }
+  }
+  &__search {
+    height: 35%;
+    width: 40%;
+    border-radius: 2em;
+    background: {
+      color: white;
+    }
+  }
+}

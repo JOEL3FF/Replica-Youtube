@@ -1,0 +1,25 @@
+.bloque-tres {
+  grid-area: tres;
+  display: grid;
+
+  grid: {
+    template-columns: repeat(4, 1fr);
+    template-rows: repeat(5, 1fr);
+    auto-flow: row;
+    auto-rows: auto;
+    gap: 1em;
+  }
+
+  &-figure {
+    color: white;
+    max-width: 100%;
+    height: 100%;
+
+    &__img {
+      aspect-ratio: 4/3;
+      width: 110%;
+      object-fit: cover;
+      border-radius: 1em;
+    }
+  }
+}
