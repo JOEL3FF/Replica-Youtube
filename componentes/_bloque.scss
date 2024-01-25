@@ -1,0 +1,12 @@
+.Bloque {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid : {
+    template-columns: 3% 1fr;
+    template-rows: 10% 1fr;
+    template-areas: "uno dos" "uno tres";
+  }
+}
