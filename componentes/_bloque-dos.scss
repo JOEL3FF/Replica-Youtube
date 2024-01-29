@@ -1,15 +1,22 @@
-.bloque-dos {
-  grid-area: uno;
+.Bloque-dos {
+  grid-area: cuatro;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  justify: {
-    content: flex-start;
+  &__contenedor {
+    margin-bottom: 1em;
+    margin-top: 0.8em;
+    text-align: center;
+    z-index: 3444;
+
+    transition: transform 3s ease;
   }
-  align: {
-    items: center;
+  &__sub {
+    font-size: 0.7em;
   }
-  &__icono {
-    margin-bottom: 2em;
+
+  &input[type="checkbox"]:checked ~ .Bloque-dos__contenedor {
+    transform: translateX(10em);
   }
 }

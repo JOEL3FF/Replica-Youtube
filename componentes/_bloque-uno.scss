@@ -1,15 +1,21 @@
 .Bloque-uno {
   display: flex;
-  align: {
-    items: center;
-  }
-  justify: {
-    content: space-around;
-  }
+  justify-content: space-between;
+
   grid-area: dos;
+
+  &__picture {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__icono {
+    margin-left: 1em;
+  }
   &__img {
     width: 2em;
     height: 2em;
+    margin-left: 5em;
     &--perfil {
       border-radius: 50%;
     }
@@ -17,14 +23,69 @@
   &__text {
     font: {
       size: 1em;
+      weight: 800;
+    }
+
+    &--transparente {
+      opacity: 0.5;
+      font-size: 0.55em;
     }
   }
+  &__buscar {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__search {
-    height: 35%;
-    width: 40%;
-    border-radius: 2em;
+    height: 50%;
+    width: 60%;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    color: white;
     background: {
-      color: white;
+      color: rgb(0, 0, 0);
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid rgb(108, 165, 201);
+    }
+    border: none;
+  }
+  &__lupa {
+    &:hover::after {
+      content: "buscar";
+      font-size: 0.4em;
+      background-color: #ffffff57;
+      position: absolute;
+      top: 7em;
+      right: 19em;
+      padding: 1em;
+    }
+  }
+
+  &__mic {
+    margin-left: 1em;
+
+    padding: 0.5em;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.202);
+    }
+  }
+
+  &__choose {
+    align-self: center;
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+
+    > * {
+      margin-left: 1em;
     }
   }
 }

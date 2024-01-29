@@ -317,43 +317,106 @@ template {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 3% 1fr;
-  grid-template-rows: 10% 1fr;
-  grid-template-areas: "uno dos" "uno tres";
+  grid-template-columns: 4% 1fr;
+  grid-template-rows: 7% 1fr;
+  grid-template-areas: "dos dos" "cuatro tres";
 }
 
 .Bloque-uno {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   grid-area: dos;
+}
+.Bloque-uno__picture {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.Bloque-uno__icono {
+  margin-left: 1em;
 }
 .Bloque-uno__img {
   width: 2em;
   height: 2em;
+  margin-left: 5em;
 }
 .Bloque-uno__img--perfil {
   border-radius: 50%;
 }
 .Bloque-uno__text {
   font-size: 1em;
+  font-weight: 800;
 }
-.Bloque-uno__search {
-  height: 35%;
-  width: 40%;
-  border-radius: 2em;
-  background-color: white;
+.Bloque-uno__text--transparente {
+  opacity: 0.5;
+  font-size: 0.55em;
 }
-
-.bloque-dos {
-  grid-area: uno;
+.Bloque-uno__buscar {
+  position: relative;
+  width: 60%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
-.bloque-dos__icono {
-  margin-bottom: 2em;
+.Bloque-uno__search {
+  height: 50%;
+  width: 60%;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: none;
+}
+.Bloque-uno__search:focus {
+  outline: none;
+  border: 1px solid rgb(108, 165, 201);
+}
+.Bloque-uno__lupa:hover::after {
+  content: "buscar";
+  font-size: 0.4em;
+  background-color: rgba(255, 255, 255, 0.3411764706);
+  position: absolute;
+  top: 7em;
+  right: 19em;
+  padding: 1em;
+}
+.Bloque-uno__mic {
+  margin-left: 1em;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.Bloque-uno__mic:hover {
+  background-color: rgba(255, 255, 255, 0.202);
+}
+.Bloque-uno__choose {
+  align-self: center;
+  margin-right: 2em;
+  display: flex;
+  align-items: center;
+}
+.Bloque-uno__choose > * {
+  margin-left: 1em;
+}
+
+.Bloque-dos {
+  grid-area: cuatro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Bloque-dos__contenedor {
+  margin-bottom: 1em;
+  margin-top: 0.8em;
+  text-align: center;
+  z-index: 3444;
+  transition: transform 3s ease;
+}
+.Bloque-dos__sub {
+  font-size: 0.7em;
+}
+.Bloque-dosinput[type=checkbox]:checked ~ .Bloque-dos__contenedor {
+  transform: translateX(10em);
 }
 
 .bloque-tres {
@@ -363,7 +426,6 @@ template {
   grid-template-rows: repeat(5, 1fr);
   grid-auto-flow: row;
   grid-auto-rows: auto;
-  grid-gap: 1em;
 }
 .bloque-tres-figure {
   color: white;
@@ -375,6 +437,12 @@ template {
   width: 110%;
   object-fit: cover;
   border-radius: 1em;
+}
+.bloque-tres-figure__icono {
+  aspect-ratio: 1/1;
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=estilo.css.map */

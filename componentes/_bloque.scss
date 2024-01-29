@@ -5,8 +5,8 @@
   width: 100%;
   display: grid;
   grid : {
-    template-columns: 3% 1fr;
-    template-rows: 10% 1fr;
-    template-areas: "uno dos" "uno tres";
+    template-columns: 4% 1fr;
+    template-rows: 7% 1fr;
+    template-areas: "dos dos" "cuatro tres";
   }
 }
