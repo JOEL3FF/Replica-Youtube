@@ -23,10 +23,11 @@
   </head>
   <body class="Bloque">
     <!--BLOQUE UNO-->
+    <input type="checkbox" class="Bloque-fantasma" />
+
     <header class="Bloque-uno">
       <div class="Bloque-uno__picture">
         <span class="material-symbols-outlined Bloque-uno__icono"> menu </span>
-      
         <img
           class="Bloque-uno__img"
           src="media/logo_youtube.png"
@@ -55,8 +56,9 @@
     </header>
 
     <!--BLOQUE DOS-->
-    <aside class="Bloque-dos">
-      <input type="checkbox">
+
+    <div class="Bloque-padre">
+      <aside class="Bloque-dos">
         <div class="Bloque-dos__contenedor">
           <span class="material-symbols-outlined Bloque-dos__icono">
             home
@@ -77,133 +79,331 @@
           </span>
           <span class="Bloque-dos__sub">Favoritos</span>
         </div>
-      </div>
-    </aside>
 
-    <!--BLOQUE TRES-->
+        <!------BLOQUE DOS ESCONDIDO-->
+        <div class="Bloque-dos__contenido">
+          <hr />
+          <span class="Bloque-dos__sub--Titulo">Tu ></span>
+          <br />
+          <span class="material-symbols-outlined"> person </span>
+          <span class="Bloque-dos__sub">Tu cuenta</span>
+          <br />
+          <span class="material-symbols-outlined"> history </span>
+          <span class="Bloque-dos__sub">Historial</span>
+          <br />
+          <span class="material-symbols-outlined"> smart_display </span>
+          <span class="Bloque-dos__sub">Mis Videos</span>
+          <br />
+          <span class="material-symbols-outlined"> schedule </span>
+          <span>Ver mas tarde</span>
+          <br />
+          <hr />
+          <!--BLOQUE-TRES-SUSCRIPCIONES-->
+          <span class="">Suscripciones</span>
+          <br />
+          <img
+            src="imagenes/Bloque-tres-icono-cinco.jpeg"
+            alt="Iconos"
+            class="Bloque-dos__img"
+          />
+          <br />
+          <img
+            src="imagenes/Bloque-tres-icono-uno.jpg"
+            alt="Iconos"
+            class="Bloque-dos__img"
+          />
+          <br />
+          <img
+            src="imagenes/Bloque-tres-icono-dos.jpeg"
+            alt="Iconos"
+            class="Bloque-dos__img"
+          />
+          <br />
+          <img
+            src="imagenes/Bloque-tres-icono-tres.avif"
+            alt="Iconos"
+            class="Bloque-dos__img"
+          />
+          <br />
+          <img
+            src="imagenes/Bloque-tres-icono-cuatro.jpeg"
+            alt="Iconos"
+            class="Bloque-dos__img"
+          />
+          <br />
+          <img
+            src="imagenes/Bloque-tres-icono-seis.avif"
+            alt="Iconos"
+            class="Bloque-dos__img"
+          />
+          <hr />
+          <!--BLOQUE TRES EXPLORAR-->
+          <span>Explorar</span>
+          <br />
+          <span class="material-symbols-outlined"> local_fire_department </span>
+          <span>Tendencias</span>
+          <br />
+          <span class="material-symbols-outlined"> music_note </span>
+          <span>Musica</span>
+          <br />
+          <span class="material-symbols-outlined"> sports_esports </span>
+          <span>Videojuegos</span>
+          <br />
+          <span class="material-symbols-outlined"> emoji_events </span>
+          <span>Deportes</span>
+          <br />
+          <span class="material-symbols-outlined"> school </span>
+          <span>Aprendizaje</span>
+          <hr />
+          <span>Mas de Youtube</span>
+        </div>
+      </aside>
 
-    <main class="bloque-tres">
-      <figure class="bloque-tres-figure">
-        <img
-          src=" media/imagen-miniatura.jpg"
-          alt="uno"
-          class="bloque-tres-figure__img"
-        />
-        <img
-          src="imagenes/Bloque-tres-icono-uno.jpg"
-          alt="imagen"
-          class="bloque-tres-figure__icono"
-        />
-        <figcaption class="figure__caption">
-          Fiestas de muertos
+      <!--BLOQUE TRES-->
 
-          <small>
-            <br />
-            naturaleza <br />
-            21 K visualizaciones hace 6 meses
-          </small>
-        </figcaption>
-      </figure>
-      <figure class="bloque-tres-figure">
-        <img
-          src="media/imagen-miniatura-2.webp"
-          alt="dos"
-          class="bloque-tres-figure__img"
-        />
-        <img
-          src="imagenes/Bloque-tres-icono-dos.jpeg"
-          alt="Icono-dos"
-          class="bloque-tres-figure__icono"
-        />
-        <figcaption class="figure__caption">
-          La naturaleza y una buena forma de vivir
-          <small>
-            naturaleza <br />
-            21 K visualizaciones hace 6 meses
-          </small>
-        </figcaption>
-      </figure>
-      <figure class="bloque-tres-figure">
-        <img
-          class="bloque-tres-figure__img"
-          src="media/imagen-miniatura-3.avif"
-          alt="tres"
-        />
-        <img
-          src="imagenes/Bloque-tres-icono-tres.avif"
-          alt="Icono-tres"
-          class="bloque-tres-figure__icono"
-        />
+      <main class="bloque-tres">
+        <figure class="bloque-tres-figure">
+          <img
+            src=" media/imagen-miniatura.jpg"
+            alt="uno"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-uno.jpg"
+            alt="imagen"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
 
-        <figcaption class="figure__caption">
-          Fiestas de muertos
-          <small>
-            <br />
-            naturaleza <br />
-            21 K visualizaciones hace 6 meses
-          </small>
-        </figcaption>
-      </figure>
-      <figure class="bloque-tres-figure">
-        <img
-          src="media/imagen-miniatura-4.avif"
-          alt="cuatro"
-          class="bloque-tres-figure__img"
-        />
-        <img
-          src="imagenes/Bloque-tres-icono-cuatro.jpeg"
-          alt="Icono-cuatro"
-          class="bloque-tres-figure__icono"
-        />
-        <figcaption class="figure__caption">
-          Fiestas de muertos
-          <small>
-            <br />
-            naturaleza <br />
-            21 K visualizaciones hace 6 meses
-          </small>
-        </figcaption>
-      </figure>
-      <figure class="bloque-tres-figure">
-        <img
-          src="media/imagen-miniatura-5.jpg"
-          alt="cinco"
-          class="bloque-tres-figure__img"
-        />
-        <img
-          src="imagenes/Bloque-tres-icono-cinco.jpeg"
-          alt="Icono-cinco"
-          class="bloque-tres-figure__icono"
-        />
-        <figcaption class="figure__caption">
-          Fiestas de muertos
-          <small>
-            <br />
-            naturaleza <br />
-            21 K visualizaciones hace 6 meses
-          </small>
-        </figcaption>
-      </figure>
-      <figure class="bloque-tres-figure">
-        <img
-          src="media/imagen-miniatura-6.jpeg"
-          alt="seis"
-          class="bloque-tres-figure__img"
-        />
-        <img
-          src="imagenes/Bloque-tres-icono-seis.avif"
-          alt="Icono-seis"
-          class="bloque-tres-figure__icono"
-        />
-        <figcaption class="figure__caption">
-          Fiestas de muertos
-          <small>
-            <br />
-            naturaleza <br />
-            21 K visualizaciones hace 6 meses
-          </small>
-        </figcaption>
-      </figure>
-    </main>
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-2.webp"
+            alt="dos"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-dos.jpeg"
+            alt="Icono-dos"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            La naturaleza y una buena forma de vivir
+            <small>
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            class="bloque-tres-figure__img"
+            src="media/imagen-miniatura-3.avif"
+            alt="tres"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-tres.avif"
+            alt="Icono-tres"
+            class="bloque-tres-figure__icono"
+          />
+
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-4.avif"
+            alt="cuatro"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-cuatro.jpeg"
+            alt="Icono-cuatro"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-5.jpg"
+            alt="cinco"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-cinco.jpeg"
+            alt="Icono-cinco"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-6.jpeg"
+            alt="seis"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-seis.avif"
+            alt="Icono-seis"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-6.jpeg"
+            alt="seis"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-seis.avif"
+            alt="Icono-seis"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-6.jpeg"
+            alt="seis"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-seis.avif"
+            alt="Icono-seis"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-6.jpeg"
+            alt="seis"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-seis.avif"
+            alt="Icono-seis"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-6.jpeg"
+            alt="seis"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-seis.avif"
+            alt="Icono-seis"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-6.jpeg"
+            alt="seis"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-seis.avif"
+            alt="Icono-seis"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+        <figure class="bloque-tres-figure">
+          <img
+            src="media/imagen-miniatura-6.jpeg"
+            alt="seis"
+            class="bloque-tres-figure__img"
+          />
+          <img
+            src="imagenes/Bloque-tres-icono-seis.avif"
+            alt="Icono-seis"
+            class="bloque-tres-figure__icono"
+          />
+          <figcaption class="figure__caption">
+            Fiestas de muertos
+            <small>
+              <br />
+              naturaleza <br />
+              21 K visualizaciones hace 6 meses
+            </small>
+          </figcaption>
+        </figure>
+      </main>
+    </div>
   </body>
 </html>

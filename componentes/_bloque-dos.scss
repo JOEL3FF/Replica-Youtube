@@ -1,22 +1,69 @@
-.Bloque-dos {
+.Bloque-padre {
   grid-area: cuatro;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  overflow: hidden;
+}
 
+.Bloque-dos {
+  width: 30%;
+  overflow-y: scroll;
+  overflow-x: hidden;
   &__contenedor {
     margin-bottom: 1em;
     margin-top: 0.8em;
     text-align: center;
     z-index: 3444;
-
-    transition: transform 3s ease;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__sub {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
-  &input[type="checkbox"]:checked ~ .Bloque-dos__contenedor {
-    transform: translateX(10em);
+  &__checkbox {
+    color: red;
+    background-color: red;
   }
+  &__contenido {
+    display: none;
+  }
+  &__img {
+    border-radius: 50%;
+    width: 20%;
+    height: 5%;
+  }
+}
+
+.Bloque-fantasma {
+  position: absolute;
+  top: 1.7em;
+  left: 1.7em;
+  width: 1.4em;
+  height: 1.4em;
+  opacity: 0;
+  cursor: pointer;
+}
+.Bloque-fantasma:active
+  ~ .Bloque-uno
+  > .Bloque-uno__picture
+  > .Bloque-uno__icono {
+  background-color: rgba(255, 255, 255, 0.367);
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+}
+
+.Bloque-fantasma:checked ~ .Bloque-padre > .Bloque-dos {
+  width: 80%;
+  display: inline-block;
+}
+
+.Bloque-fantasma:checked
+  ~ .Bloque-padre
+  > .Bloque-dos
+  > .Bloque-dos__contenido {
+  display: contents;
 }
