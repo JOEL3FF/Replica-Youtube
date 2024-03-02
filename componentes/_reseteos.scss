@@ -20,8 +20,6 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  font-family: "Oswald", sans-serif;
-  font-family: "Roboto", sans-serif;
 }
 
 /* Sections
@@ -35,6 +33,10 @@ body {
   margin: 0;
 }
 
+/*Reseteo hr*/
+hr {
+  width: 100%;
+}
 /**
  * Render the `main` element consistently in IE.
  */

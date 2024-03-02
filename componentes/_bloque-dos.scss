@@ -1,17 +1,18 @@
 .Bloque-padre {
   grid-area: cuatro;
   display: flex;
-  overflow: hidden;
 }
 
 .Bloque-dos {
-  width: 30%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  width: 7vw;
+  &__sub {
+    font-size: 0.56em;
+  }
+
   &__contenedor {
-    margin-bottom: 1em;
-    margin-top: 0.8em;
-    text-align: center;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+
     z-index: 3444;
     width: 100%;
     display: flex;
@@ -19,32 +20,98 @@
     justify-content: center;
     align-items: center;
   }
-  &__sub {
-    font-size: 1em;
+  &__seccio {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.6em;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #ffffff2a;
+      cursor: pointer;
+    }
   }
 
-  &__checkbox {
-    color: red;
-    background-color: red;
+  &__seccion {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #ffffff2a;
+      cursor: pointer;
+    }
   }
+  &__you {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+  }
+
+  &__img {
+    width: 2em;
+    height: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.3em;
+    display: flex;
+    align-items: center;
+
+    &--redondo {
+      border-radius: 50%;
+      width: 2em;
+      height: 2em;
+      object-fit: cover;
+      margin-left: 1em;
+      margin-right: 1em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      &::after {
+        content: "===er54gt4er ";
+        color: red;
+        border-radius: 50%;
+        width: 0.4em;
+        height: 0.4em;
+      }
+    }
+  }
+
   &__contenido {
     display: none;
   }
-  &__img {
-    border-radius: 50%;
-    width: 20%;
-    height: 5%;
+  &__span {
+    font-size: 1em;
+    margin-left: 0.4em;
+    &--titulo {
+      font-size: 1.3em;
+      margin-bottom: 0.4em;
+      margin-top: 0.4em;
+      margin-left: 0.8em;
+
+      word-spacing: 0.3em;
+    }
+    &--transparente {
+      font-size: 0.9em;
+      opacity: 0.8;
+      margin-left: 1em;
+    }
+    &--transparented {
+      font-size: 0.8em;
+      opacity: 0.4;
+      margin-left: 1em;
+    }
   }
 }
 
 .Bloque-fantasma {
-  position: absolute;
-  top: 1.7em;
-  left: 1.7em;
   width: 1.4em;
-  height: 1.4em;
+  height: 1.2em;
+  position: absolute;
+  top: 1.2em;
+  left: 1.2em;
+  margin-right: 1em;
   opacity: 0;
   cursor: pointer;
+  z-index: 33333;
 }
 .Bloque-fantasma:active
   ~ .Bloque-uno
@@ -52,15 +119,32 @@
   > .Bloque-uno__icono {
   background-color: rgba(255, 255, 255, 0.367);
   border-radius: 50%;
-  width: 1.3em;
+  width: 1em;
   height: 1.3em;
 }
 
 .Bloque-fantasma:checked ~ .Bloque-padre > .Bloque-dos {
-  width: 80%;
-  display: inline-block;
+  width: 15em;
+  max-height: 90vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
+.Bloque-fantasma:checked
+  ~ .Bloque-padre
+  > .Bloque-dos
+  > .Bloque-dos__contenedor {
+  font-size: 1.8em;
+  display: inline-flex;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff2a;
+  }
+  & > * {
+    margin-right: 0.3em;
+  }
+}
 .Bloque-fantasma:checked
   ~ .Bloque-padre
   > .Bloque-dos

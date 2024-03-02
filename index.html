@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Replica del home de youtube utilizando solamente html y css"
+    />
+    <meta name="keywords" content="Replica,Youtube,html,css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Protest+Strike&family=Roboto:ital,wght@1,400;1,500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,36 +29,288 @@
     <title>Youtube</title>
   </head>
   <body class="Bloque">
-    <!--BLOQUE UNO-->
-    <input type="checkbox" class="Bloque-fantasma" />
+    <!-- BLOQUE UNO -->
 
+    <input type="checkbox" class="Bloque-fantasma" />
     <header class="Bloque-uno">
-      <div class="Bloque-uno__picture">
-        <span class="material-symbols-outlined Bloque-uno__icono"> menu </span>
-        <img
-          class="Bloque-uno__img"
-          src="media/logo_youtube.png"
-          alt="Youtube-logo"
+      <!--BLOQUE UNO PICTURE-->
+      <div class="Bloque-uno-picture">
+        <span class="material-symbols-outlined Bloque-uno-picture__icono">
+          menu
+        </span>
+        <div class="Bloque-uno-picture__logo">
+          <img
+            class="Bloque-uno-picture__img"
+            src="media/logo_youtube.png"
+            alt="Youtube-logo"
+          />
+          <span class="Bloque-uno-picture__text"
+            >Youtube
+            <sup class="Bloque-uno-picture__text--transparente">EC</sup>
+          </span>
+        </div>
+      </div>
+      <!-- BLOQUE UNO  BUSCAR -->
+      <div class="Bloque-uno-buscar">
+        <input
+          class="Bloque-uno-buscar__search"
+          type="search"
+          placeholder="Buscar"
         />
-        <span class="Bloque-uno__text"
-          >Youtube <sup class="Bloque-uno__text--transparente">EC</sup>
+
+        <span class="material-symbols-outlined Bloque-uno-buscar__lupa">
+          search
+        </span>
+
+        <span class="material-symbols-outlined Bloque-uno-buscar__mic">
+          mic
         </span>
       </div>
+      <!--BLOQUE UNO CONFIG UNO -->
 
-      <div class="Bloque-uno__buscar">
-        <input class="Bloque-uno__search" type="search" placeholder="Buscar" />
-        <span class="material-symbols-outlined Bloque-uno__lupa"> search </span>
-        <span class="material-symbols-outlined Bloque-uno__mic"> mic </span>
-      </div>
-      <div class="Bloque-uno__choose">
-        <span class="material-symbols-outlined"> video_call </span>
-        <span class="material-symbols-outlined"> notifications </span>
+      <div class="Bloque-uno-config">
+        <div class="Bloque-uno-config__choose">
+          <div class="material-symbols-outlined Bloque-uno-config__video">
+            video_call
 
-        <img
-          src="media/astronauta.avif"
-          alt="foto-Perfil"
-          class="Bloque-uno__img Bloque-uno__img--perfil"
-        />
+            <input type="checkbox" class="Bloque-uno-config__checkbox" />
+            <div class="Bloque-uno-config__fantasma--uno">
+              <div class="Bloque-uno-config__opcion">
+                <span class="material-symbols-outlined"> smart_display </span>
+                <span>Subir video</span>
+              </div>
+
+              <div class="Bloque-uno-config__opcion">
+                <span class="material-symbols-outlined">sensors</span>
+                <span>Emitir directo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--BLOQUE UNO CONFIG DOS-->
+        <div class="Bloque-uno-config__choose">
+          <div class="material-symbols-outlined Bloque-uno-config__noti">
+            notifications
+            <input type="checkbox" class="Bloque-uno-config__checkbox" />
+            <div class="Bloque-uno-config__fantasma">
+              <div class="Bloque-uno-config__ui">
+                <h3>Notificaciones</h3>
+                <div class="Bloque-uno-config__sus">
+                  <div class="Bloque-uno-config__inline">
+                    <img
+                      src="imagenes/Bloque-tres-icono-uno.jpg"
+                      alt="Deportes"
+                      class="Bloque-uno-config__image"
+                    />
+                    <span>
+                      ElVeridico ha subido las nejoras<br />
+                      para el rendimiento en cuestion <br />
+                      ha tiempo completo
+                      <br />
+                      <small>Have 10 minutos</small>
+                    </span>
+                    <img
+                      src="media/imagen-miniatura-10.avif"
+                      class="Bloque-uno-config__img--notimg"
+                      alt="imagen-miniatura"
+                    />
+                  </div>
+
+                  <div class="Bloque-uno-config__inline">
+                    <img
+                      src="imagenes/Bloque-tres-icono-dos.jpeg"
+                      alt="Deportes"
+                      class="Bloque-uno-config__image"
+                    />
+                    <span
+                      >El Farsanrteha ha subido las<br />
+                      aventura en cada sector para <br />
+                      tu sector
+                      <br />
+                      <small>Have 20 minutos</small>
+                      <br />
+                    </span>
+                    <img
+                      src="media/imagen-miniatura-2.webp"
+                      class="Bloque-uno-config__img--notimg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="Bloque-uno-config__inline">
+                    <img
+                      src="imagenes/Bloque-tres-icono-tres.avif"
+                      alt="Deportes"
+                      class="Bloque-uno-config__image"
+                    />
+                    <span>
+                      ElVeridico ha subido las nejoras<br />
+                      para el rendimiento en cuestion <br />
+                      ha tiempo completo
+                      <br />
+                      <small>Have 10 minutos</small>
+                    </span>
+                    <img
+                      src="media/imagen-miniatura-3.avif"
+                      class="Bloque-uno-config__img--notimg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="Bloque-uno-config__inline">
+                    <img
+                      src="imagenes/Bloque-tres-icono-cuatro.jpeg"
+                      alt="Deportes"
+                      class="Bloque-uno-config__image"
+                    />
+                    <span>
+                      ElVeridico ha subido las nejoras<br />
+                      para el rendimiento en cuestion <br />
+                      ha tiempo completo
+                      <br />
+                      <small>Have 10 minutos</small>
+                    </span>
+                    <img
+                      src="media/imagen-miniatura-4.avif"
+                      class="Bloque-uno-config__img--notimg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="Bloque-uno-config__inline">
+                    <img
+                      src="imagenes/Bloque-tres-icono-cinco.jpeg"
+                      alt="Deportes"
+                      class="Bloque-uno-config__image"
+                    />
+                    <span>
+                      ElVeridico ha subido las nejoras <br />
+                      para el rendimiento en cuestion <br />
+                      ha tiempo completo
+                      <br />
+                      <small>Have 10 minutos</small>
+                    </span>
+                    <img
+                      src="media/imagen-miniatura-5.jpg"
+                      class="Bloque-uno-config__img--notimg"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--BLOQUE UNO CONFIG TRES-->
+
+        <div class="Bloque-uno-config__choose">
+          <div class="Bloque-uno-config__perfil">
+            <input
+              type="checkbox"
+              class="Bloque-uno-config__checkbox Bloque-uno-config__checkbox--redondo"
+            />
+
+            <div class="Bloque-uno-config__fantasma--dos">
+              <div class="Bloque-uno-config__sec--icono">
+                <img
+                  src="imagenes/Bloque-tres-icono-dos.jpeg"
+                  alt="Deportes"
+                  class="Bloque-uno-config__image"
+                />
+
+                <div>
+                  <div class="Bloque-uno-config__span--datos">
+                    Joel Zambrano
+                  </div>
+                  <div class="Bloque-uno-config__span--datos">
+                    @joelzambrano
+                  </div>
+                  <div class="Bloque-uno-config__span--blue">Ver tu canal</div>
+                </div>
+              </div>
+              <hr />
+              <div class="Bloque-uno-config__sec">
+                <div class="Bloque-uno-config__span">
+                  <b>G</b>
+
+                  Cuenta de Google
+                </div>
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined">
+                    switch_account
+                  </span>
+                  Cambiar de cuenta
+                </div>
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> login </span>
+                  Cerrar sesion
+                </div>
+              </div>
+              <hr />
+              <div class="Bloque-uno-config__sec">
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> play_circle </span>
+
+                  Youtube studio
+                </div>
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> attach_money </span>
+
+                  Compras y suscripciones
+                </div>
+              </div>
+              <div class="Bloque-uno-config__sec">
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> person_book </span>
+                  Tus datos en Youtube
+                </div>
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> mode_night </span>
+                  Aspecto:oscuro
+                </div>
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> translate </span>
+                  Idioma:Español
+                </div>
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined">
+                    admin_panel_settings
+                  </span>
+
+                  Modo Restringido : desactivado
+                </div>
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> language </span>
+
+                  Ubicacion : Ecuador
+                </div>
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> keyboard </span
+                  >Combinacion de teclas
+                </div>
+
+                <hr />
+
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> settings </span>
+                  Configuracion
+                </div>
+
+                <hr />
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> help </span>
+                  Ayuda
+                </div>
+
+                <div class="Bloque-uno-config__span">
+                  <span class="material-symbols-outlined"> info </span>
+
+                  Enviar surgerencias
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -63,9 +322,9 @@
           <span class="material-symbols-outlined Bloque-dos__icono">
             home
           </span>
-          <br />
-          <span class="Bloque-dos__sub">Home</span>
+          <span class="Bloque-dos__sub">Inicio</span>
         </div>
+        <br />
 
         <div class="Bloque-dos__contenedor">
           <span class="material-symbols-outlined Bloque-dos__icono">
@@ -73,6 +332,8 @@
           </span>
           <span class="Bloque-dos__sub">Reproducciones</span>
         </div>
+        <br />
+
         <div class="Bloque-dos__contenedor">
           <span class="material-symbols-outlined Bloque-dos__icono">
             bookmark
@@ -80,328 +341,513 @@
           <span class="Bloque-dos__sub">Favoritos</span>
         </div>
 
-        <!------BLOQUE DOS ESCONDIDO-->
+        <!------BLOQUE DOS FANTASMA-->
         <div class="Bloque-dos__contenido">
           <hr />
-          <span class="Bloque-dos__sub--Titulo">Tu ></span>
-          <br />
-          <span class="material-symbols-outlined"> person </span>
-          <span class="Bloque-dos__sub">Tu cuenta</span>
-          <br />
-          <span class="material-symbols-outlined"> history </span>
-          <span class="Bloque-dos__sub">Historial</span>
-          <br />
-          <span class="material-symbols-outlined"> smart_display </span>
-          <span class="Bloque-dos__sub">Mis Videos</span>
-          <br />
-          <span class="material-symbols-outlined"> schedule </span>
-          <span>Ver mas tarde</span>
-          <br />
+          <div class="Bloque-dos__seccion">
+            <span class="Bloque-dos__span--titulo">Tu > </span>
+          </div>
+
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              person
+            </span>
+            <span class="Bloque-dos__span">Tu cuenta</span>
+          </div>
+
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              history
+            </span>
+            <span class="Bloque-dos__span">Historial</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              smart_display
+            </span>
+            <span class="Bloque-dos__span">Mis Videos</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              schedule
+            </span>
+            <span class="Bloque-dos__span">Ver mas tarde</span>
+          </div>
           <hr />
           <!--BLOQUE-TRES-SUSCRIPCIONES-->
-          <span class="">Suscripciones</span>
-          <br />
-          <img
-            src="imagenes/Bloque-tres-icono-cinco.jpeg"
-            alt="Iconos"
-            class="Bloque-dos__img"
-          />
-          <br />
-          <img
-            src="imagenes/Bloque-tres-icono-uno.jpg"
-            alt="Iconos"
-            class="Bloque-dos__img"
-          />
-          <br />
-          <img
-            src="imagenes/Bloque-tres-icono-dos.jpeg"
-            alt="Iconos"
-            class="Bloque-dos__img"
-          />
-          <br />
-          <img
-            src="imagenes/Bloque-tres-icono-tres.avif"
-            alt="Iconos"
-            class="Bloque-dos__img"
-          />
-          <br />
-          <img
-            src="imagenes/Bloque-tres-icono-cuatro.jpeg"
-            alt="Iconos"
-            class="Bloque-dos__img"
-          />
-          <br />
-          <img
-            src="imagenes/Bloque-tres-icono-seis.avif"
-            alt="Iconos"
-            class="Bloque-dos__img"
-          />
+          <div class="Bloque-dos__seccion">
+            <span class="Bloque-dos__span--titulo">Suscripciones</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <img
+              src="imagenes/Bloque-tres-icono-cinco.jpeg"
+              alt="Iconos"
+              class="Bloque-dos__img--redondo"
+            />
+
+            <span class="Bloque-dos__span">La madre naturaleza</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <img
+              src="imagenes/Bloque-tres-icono-uno.jpg"
+              alt="Iconos"
+              class="Bloque-dos__img--redondo"
+            />
+            <span class="Bloque-dos__span">Mascotas lindas</span>
+          </div>
+          <div class="Bloque-dos-seccion">
+            <img
+              src="imagenes/Bloque-tres-icono-dos.jpeg"
+              alt="Iconos"
+              class="Bloque-dos__img--redondo"
+            />
+            <span class="Bloque-dos__span">Veintinilla</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <img
+              src="imagenes/Bloque-tres-icono-tres.avif"
+              alt="Iconos"
+              class="Bloque-dos__img--redondo"
+            />
+            <span class="Bloque-dos__span">Los ciervos de Moises</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <img
+              src="imagenes/Bloque-tres-icono-cuatro.jpeg"
+              alt="Iconos"
+              class="Bloque-dos__img--redondo"
+            />
+
+            <span class="Bloque-dos__span">Poderio</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <img
+              src="imagenes/Bloque-tres-icono-seis.avif"
+              alt="Iconos"
+              class="Bloque-dos__img--redondo"
+            />
+            <span class="Bloque-dos__span">20Añeros</span>
+          </div>
           <hr />
           <!--BLOQUE TRES EXPLORAR-->
-          <span>Explorar</span>
-          <br />
-          <span class="material-symbols-outlined"> local_fire_department </span>
-          <span>Tendencias</span>
-          <br />
-          <span class="material-symbols-outlined"> music_note </span>
-          <span>Musica</span>
-          <br />
-          <span class="material-symbols-outlined"> sports_esports </span>
-          <span>Videojuegos</span>
-          <br />
-          <span class="material-symbols-outlined"> emoji_events </span>
-          <span>Deportes</span>
-          <br />
-          <span class="material-symbols-outlined"> school </span>
-          <span>Aprendizaje</span>
+          <div class="Bloque-dos__seccion">
+            <span class="Bloque-dos__span--titulo">Explorar</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              local_fire_department
+            </span>
+            <span class="Bloque-dos__span">Tendencias</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              music_note
+            </span>
+            <span class="Bloque-dos__span">Musica</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              sports_esports
+            </span>
+            <span class="Bloque-dos__span">Videojuegos</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              emoji_events
+            </span>
+            <span class="Bloque-dos__span">Deportes</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              school
+            </span>
+            <span class="Bloque-dos__span">Aprendizaje</span>
+          </div>
           <hr />
-          <span>Mas de Youtube</span>
+          <!--BLOQUE TRES MAS DE YOUTUBE-->
+          <div class="Bloque-dos__seccio">
+            <span class="Bloque-dos__span--titulo">Mas de Youtube</span>
+          </div>
+          <div class="Bloque-dos__seccio">
+            <img
+              src="Youtubeimg/Youtube-kids_img.png"
+              alt="Youtube-kids"
+              class="Bloque-dos__you"
+            />
+            <span class="Bloque-dos__span">Youtube Kids</span>
+          </div>
+
+          <div class="Bloque-dos__seccio">
+            <img
+              src="Youtubeimg/logo_youtube.png"
+              alt="Youtube-img"
+              class="Bloque-dos__you"
+            />
+            <span class="Bloque-dos__span">Youtube Premium</span>
+          </div>
+          <div class="Bloque-dos__seccio">
+            <img
+              src="Youtubeimg/Youtube-miusig_img.png"
+              alt="Youtube-musica"
+              class="Bloque-dos__you"
+            />
+
+            <span class="Bloque-dos__span">Youtube Music</span>
+          </div>
+          <div class="Bloque-dos__seccio">
+            <img
+              src="Youtubeimg/youtube-studio.jpg"
+              alt="Youtube-studio"
+              class="Bloque-dos__you"
+            />
+            <span class="Bloque-dos__span">Youtube Studio</span>
+          </div>
+          <!--BLOQUE TRES AYUDA-->
+          <hr />
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              settings
+            </span>
+            <span class="Bloque-dos__span">Configuracion</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              emoji_flags
+            </span>
+            <span class="Bloque-dos__span">Historial de denuncias</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              help
+            </span>
+            <span class="Bloque-dos__span">Ayuda</span>
+          </div>
+          <div class="Bloque-dos__seccion">
+            <span class="material-symbols-outlined Bloque-dos__img">
+              feedback
+            </span>
+            <span class="Bloque-dos__span">Enviar Surgerencias</span>
+          </div>
+          <hr />
+          <div class="Bloque-dos__span--transparente">
+            Información Prensa Derechos de autor Contactar Creadores Publicidad
+            Desarrolladores Términos Privacidad Política y seguridad Cómo
+            funciona YouTube Probar funciones nuevas
+            <br />
+            <br />
+          </div>
+          <div class="Bloque-dos__span--transparented">© 2024 Google LLC</div>
         </div>
       </aside>
 
       <!--BLOQUE TRES-->
 
       <main class="bloque-tres">
-        <figure class="bloque-tres-figure">
-          <img
-            src=" media/imagen-miniatura.jpg"
-            alt="uno"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-uno.jpg"
-            alt="imagen"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src=" media/imagen-miniatura.jpg"
+              alt="uno"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">2:09</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-uno.jpg"
+              alt="imagen"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              La paz interior
 
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+              <small class="bloque-tres__small">
+                <br />
+                Estoico <br />
+                21 K visualizaciones hace 6 meses
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-2.webp"
-            alt="dos"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-dos.jpeg"
-            alt="Icono-dos"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            La naturaleza y una buena forma de vivir
-            <small>
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
-        </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            class="bloque-tres-figure__img"
-            src="media/imagen-miniatura-3.avif"
-            alt="tres"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-tres.avif"
-            alt="Icono-tres"
-            class="bloque-tres-figure__icono"
-          />
 
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-2.webp"
+              alt="dos"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">15:09</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-dos.jpeg"
+              alt="Icono-dos"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              La naturaleza buena forma de vivir
+              <small class="bloque-tres__small">
+                <br />
+                Ruley <br />
+                11 K visualizaciones hace 2 meses
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-4.avif"
-            alt="cuatro"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-cuatro.jpeg"
-            alt="Icono-cuatro"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              class="bloque-tres__img"
+              src="media/imagen-miniatura-3.avif"
+              alt="tres"
+            />
+            <span class="bloque-tres__minute">5:30</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-tres.avif"
+              alt="Icono-tres"
+              class="bloque-tres__icono"
+            />
+
+            <figcaption class="bloque-tres__caption">
+              Celebridades fantasticas
+              <small class="bloque-tres__small">
+                <br />
+                Degreks <br />
+                8 K visualizaciones hace 1 semana
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-5.jpg"
-            alt="cinco"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-cinco.jpeg"
-            alt="Icono-cinco"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-4.avif"
+              alt="cuatro"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">10:00</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-cuatro.jpeg"
+              alt="Icono-cuatro"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              Lo atmosferico
+              <small class="bloque-tres__small">
+                <br />
+                Intergalaxia <br />
+                3 K visualizaciones hace 2 meses
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-6.jpeg"
-            alt="seis"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-seis.avif"
-            alt="Icono-seis"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-5.jpg"
+              alt="cinco"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">15:23</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-cinco.jpeg"
+              alt="Icono-cinco"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              Los andes
+              <small class="bloque-tres__small">
+                <br />
+                Supersonic <br />
+                110.000 K visualizaciones hace 3 años
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-6.jpeg"
-            alt="seis"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-seis.avif"
-            alt="Icono-seis"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-6.jpeg"
+              alt="seis"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">4:13</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-seis.avif"
+              alt="Icono-seis"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              Superviviencia
+              <small class="bloque-tres__small">
+                <br />
+                Bettermen <br />
+                2.000.000 M visualizaciones hace 4 dias
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-6.jpeg"
-            alt="seis"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-seis.avif"
-            alt="Icono-seis"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-12.jpg"
+              alt="seis"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">14:03</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-siete.jpg"
+              alt="Icono-seis"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              El gran llanero
+              <small class="bloque-tres__small">
+                <br />
+                Minimalixmo <br />
+                1 K visualizaciones hace 3 meses
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-6.jpeg"
-            alt="seis"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-seis.avif"
-            alt="Icono-seis"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-11.jpg"
+              alt="seis"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">22:11</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-ocho.avif"
+              alt="Icono-seis"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              Resumen DB
+              <small class="bloque-tres__small">
+                <br />
+                TuCanalOtaku <br />
+                500 visualizaciones hace 1 mes
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-6.jpeg"
-            alt="seis"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-seis.avif"
-            alt="Icono-seis"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-10.avif"
+              alt="seis"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">6:33</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-nueve.jpg"
+              alt="Icono-seis"
+              class="bloque-tres__icono"
+            />
+
+            <figcaption class="bloque-tres__caption">
+              La paz entre las montañas
+              <small class="bloque-tres__small">
+                <br />
+                pAzino <br />
+                2 K visualizaciones hace 10 meses
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-6.jpeg"
-            alt="seis"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-seis.avif"
-            alt="Icono-seis"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-7.jpg"
+              alt="seis"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">2:43</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-doce.avif"
+              alt="Icono-seis"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              Hoja de la suerte
+              <small class="bloque-tres__small">
+                <br />
+                Conminta <br />
+                211 K visualizaciones hace 2 semanas
+              </small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="bloque-tres-figure">
-          <img
-            src="media/imagen-miniatura-6.jpeg"
-            alt="seis"
-            class="bloque-tres-figure__img"
-          />
-          <img
-            src="imagenes/Bloque-tres-icono-seis.avif"
-            alt="Icono-seis"
-            class="bloque-tres-figure__icono"
-          />
-          <figcaption class="figure__caption">
-            Fiestas de muertos
-            <small>
-              <br />
-              naturaleza <br />
-              21 K visualizaciones hace 6 meses
-            </small>
-          </figcaption>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-9.webp"
+              alt="seis"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">1:08</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-doce.jpg"
+              alt="Icono-seis"
+              class="bloque-tres__icono"
+            />
+
+            <figcaption class="bloque-tres__caption">
+              La inteligencia artificial
+              <small class="bloque-tres__small">
+                <br />
+                Tecnopolita <br />
+                1 K visualizaciones hace 8 meses
+              </small>
+            </figcaption>
+          </figure>
+        </figure>
+        <figure class="bloque-tres__figure">
+          <div class="bloque-tres__div">
+            <img
+              src="media/imagen-miniatura-8.png"
+              alt="seis"
+              class="bloque-tres__img"
+            />
+            <span class="bloque-tres__minute">6:45</span>
+          </div>
+          <figure class="bloque-tres__contenedor">
+            <img
+              src="imagenes/Bloque-tres-icono-once.jpeg"
+              alt="Icono-seis"
+              class="bloque-tres__icono"
+            />
+            <figcaption class="bloque-tres__caption">
+              Pintura artistica
+              <small class="bloque-tres__small">
+                <br />
+                Dr.Fernanz <br />
+                21.000 K visualizaciones hace 6 meses
+              </small>
+            </figcaption>
+          </figure>
         </figure>
       </main>
     </div>
